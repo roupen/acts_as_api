@@ -3,14 +3,14 @@ $:.push File.expand_path("../lib", __FILE__)
 require "acts_as_api/version"
 
 Gem::Specification.new do |s|
-  s.name        = "acts_as_api"
+  s.name        = "acts_as_api_sequel"
   s.version     = ActsAsApi::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Christian Bäuerlein"]
-  s.email       = ["christian@ffwdme.com"]
-  s.homepage    = "https://github.com/fabrik42/acts_as_api"
-  s.summary     = %q{Makes creating XML/JSON responses in Rails 3 easy and fun.}
-  s.description = %q{acts_as_api enriches the models and controllers of your app in a rails-like way so you can easily determine how your XML/JSON API responses should look like.}
+  s.authors     = ["Roupen Mouradian"]
+  s.email       = ["roupen.mouradian@gmail.com"]
+  s.homepage    = "https://github.com/roupen/acts_as_api"
+  s.summary     = %q{Original acts_as_api library by Christian Bäuerlein with sequel}
+  s.description = %q{acts_as_api library adjusted to support sequel models}
 
   s.add_dependency('activemodel','>= 3.0.0')
   s.add_dependency('activesupport','>= 3.0.0')
