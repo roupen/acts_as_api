@@ -35,6 +35,10 @@ if defined?(Mongoid::Document)
   Mongoid::Document.send :include, ActsAsApi::Adapters::Mongoid
 end
 
+if defined?(Sequel::Model)
+  Sequel::Model.extend ActsAsApi::Base
+end
+
 # Attach ourselves to the action controller of Rails
 if defined?(ActionController::Base)
   ActionController::Base.send :include, ActsAsApi::Rendering
